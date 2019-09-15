@@ -49,7 +49,7 @@ def getframe(): #TODO передавать параметр ID сессии
 		#return c2['frame']
 	#else:
 	ses_id = request.args.get('ses_id') 
-	if ses_id == '3232' and"{}".format(r.get('check'))=="b'1'":
+	if ses_id == '3232' and "{}".format(r.get('check'))=="b'1'":
 		r.set('check',0)
 		return r.get('frame')
 	else:
